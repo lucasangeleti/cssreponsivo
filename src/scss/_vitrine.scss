@@ -9,12 +9,12 @@
     }
 
     &__item {
-        background-color: rgba(250, 250, 250, .2);
+        background-color: #FFF;
         border-radius: 1rem;
         display: flex;
         flex-flow: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         min-height: 20rem;
         padding: 1rem;
         position: relative;
