@@ -1,4 +1,4 @@
-# Lance Negócios
+# Lab Saúde
 Projeto para base de conhecimento de CSS Avançado.
 
 ## Atividade
