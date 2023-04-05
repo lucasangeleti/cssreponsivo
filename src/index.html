@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap" rel="stylesheet">
     <title>Lab Saúde</title>
 </head>
 <body>
@@ -57,12 +60,15 @@
                 <nav class="nav">
                     <a class="nav__item" href="#sobre">Sobre</a>
                     <a class="nav__item" href="#serviços">Serviços</a>
-                    <a class="nav__item" href="#Contato">Contato</a>
+                    <a class="nav__item" href="#orcamento">Orçamento</a>
+
                 </nav>
-                <div class="hero col-13">
-                    <img src="./assets/images/labs.png" alt="labs saúde">
-                    <h1>Veja como acelerar a criação do seu negócio</h1>
+                <div class="banner">
+                    <div class="title h2">
+                        <h2>Sua saúde é nossa prioridade</h2>
+                    </div>
                 </div>
+               
             </div>
         </header>
         <section id="sobre">
@@ -76,7 +82,7 @@
                 </article>
             </div>
         </section>
-        <section id="produtos">
+        <section id="serviços">
             <div class="container">
                 <article>
                     <h1>Serviços</h1>
@@ -122,7 +128,32 @@
                     </div>
                 </article>
             </div>
+            
         </section>
+        <section id="orcamento">
+            <div class="form">
+            <form class="contact-form" action="#" method="POST">
+              <h2>Faça um orçamento</h2>
+              <div class="input-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="input-group">
+                <label for="subject">Telefone</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="input-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+          </section>
 
         <footer>
             <div class="container">

@@ -2,15 +2,14 @@ $color-primary: #195484;
 $color-secondary: #f58220;
 $font-color-primary: #ffffff;
 $font-color-secondary: #454545;
-$font-default: Arial, Helvetica, sans-serif;
+$font-default: 'Manrope', sans-serif;
 $font-size-default: 1.6rem;
-$font-size-nav: 1.8rem;
+$font-size-nav: 3rem;
 
 @import 'fonts';
-@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap');
 @import 'nav';
 @import 'grid';
-
 @viewport {
     width: device-width;
     zoom: 1;
@@ -29,7 +28,7 @@ html {
 body {
     background-color: $color-primary;
     font-family: $font-default;
-    margin: 0;
+    margin: 1em;
     font-size: 1.4rem;
 }
 
@@ -51,12 +50,11 @@ article {
 
 h2 {
     color: $font-color-primary;
-    font-family: 'freshman', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 4rem;
-    text-shadow: 1px 2px 8px #FFFFFF;
+    font-family: 'Manrope', sans-serif;;
+    font-weight: 800;
+    font-size: 2rem;    
 }
+
 
 #root,
 header,
@@ -68,30 +66,136 @@ footer {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 2rem 0;
     margin: 0;
+    border-radius: 5rem;
+    padding-left: 20px;
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 80%;
+    align-content: center;
 }
+
+/* Estilos para o formulário de contato */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .contact-form {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555555;
+  }
+  
+
+
+
+
+
+
+/*BANNER*/
+.banner {
+    width: 100%;
+    background-size: flex;
+    float: left;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;    
+    padding: 10%;
+    background: url(../assets/images/bg.jpg) repeat-x;
+    background-position: 2%;
+    margin-top:100px;
+    border-radius: 5rem;
+
+}
+.title {width: 100%}
+.title h2 {
+    text-align: left; font-size: 5rem; color: #fff; font-weight: 800;
+}
+.title h3 {font-size: 1.5em; color: #fff}
+
 
 // SASS
 .container {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
-    max-width: 90vw;
+    max-width: 100%;
 
     @media (max-width: 768px){
-        max-width: 99%;
+        max-width: 100%;
+        flex-direction: column;
+
     }
 
     @media (min-width: 1024px ){
     }
 
-    @media (min-width: 414px ){
+    @media (min-width: 1024px ){
+    }
+
+    @media (max-width: 414px){
+        max-width: 100%;
+        flex-direction: column;
+        .title h2 { padding-left: 0px}
     }
 }
 
